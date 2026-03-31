@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+:root {
+  --background: #e6f1fb;
+  --foreground: #0f2742;
+  --surface: #f1efe8;
+  --surface-strong: rgba(241, 239, 232, 0.84);
+  --primary: #185fa5;
+  --primary-deep: #0c447c;
+  --primary-soft: #bdd9f3;
+  --line: rgba(12, 68, 124, 0.12);
+  --shadow-soft: 0 20px 60px rgba(12, 68, 124, 0.12);
+  --shadow-card: 0 18px 50px rgba(24, 95, 165, 0.14);
+  --shadow-premium: 0 28px 80px rgba(12, 68, 124, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.85), transparent 32%),
+    radial-gradient(circle at top right, rgba(24, 95, 165, 0.14), transparent 28%),
+    linear-gradient(180deg, #edf5fc 0%, var(--background) 38%, #f7fbff 100%);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.3), transparent 78%);
+  opacity: 0.35;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(24, 95, 165, 0.18);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-primary: var(--primary);
+  --color-primary-deep: var(--primary-deep);
+  --color-primary-soft: var(--primary-soft);
+  --color-line: var(--line);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-poppins);
+}
+
+@utility container-shell {
+  margin-inline: auto;
+  width: min(1180px, calc(100% - 1.5rem));
+}
+
+@utility glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.48);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-soft);
+}
+
+@utility nav-panel {
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(230, 241, 251, 0.72));
+  backdrop-filter: blur(24px) saturate(150%);
+  box-shadow:
+    0 18px 44px rgba(12, 68, 124, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.78);
+}
+
+@utility surface-panel {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), var(--surface-strong));
+  box-shadow: var(--shadow-card);
+}
+
+@utility premium-panel {
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(241, 239, 232, 0.82)),
+    radial-gradient(circle at top right, rgba(94, 165, 227, 0.18), transparent 42%);
+  box-shadow: var(--shadow-premium);
+  backdrop-filter: blur(24px);
+}
+
+@utility section-padding {
+  padding-top: clamp(6.5rem, 10vw, 8.5rem);
+  padding-bottom: clamp(4.5rem, 8vw, 7rem);
+}
+
+@utility section-anchor {
+  scroll-margin-top: 8rem;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(24, 95, 165, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 95, 165, 0.08) 1px, transparent 1px);
+  background-position: center;
+  background-size: 44px 44px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 90%);
+}
+
+.card-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(24, 95, 165, 0.18));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.section-divider {
+  position: relative;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, rgba(24, 95, 165, 0.18), transparent);
+}
+
+.mesh-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(16px);
+  pointer-events: none;
+  opacity: 0.7;
+}
