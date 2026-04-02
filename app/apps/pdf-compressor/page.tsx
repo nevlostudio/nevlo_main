@@ -12,9 +12,9 @@ import Link from "next/link";
 import { BrandLockup } from "@/components/brand-lockup";
 
 export const metadata: Metadata = {
-  title: "PDF Compressor | Nevlo",
+  title: "Compress PDF to 100KB - Nevlo",
   description:
-    "Compress PDF files with faster sharing, adjustable quality, and a privacy-focused workflow from Nevlo.",
+    "Compress PDF files to a smaller size for faster sharing with a privacy-focused workflow from Nevlo.",
 };
 
 const highlights = [
@@ -84,13 +84,12 @@ export default function PdfCompressorPage() {
             </div>
 
             <h1 className="mt-5 font-display text-4xl font-semibold leading-tight text-primary-deep md:text-6xl">
-              PDF Compressor
+              Compress PDF to 100KB
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-foreground/74 md:text-lg">
-              PDF Compressor helps users reduce PDF file size without adding clutter to the process.
-              It is designed for quick document cleanup, easier sharing, and a simple experience that
-              feels reliable on everyday Android devices.
+              Compress PDF to 100KB helps users reduce PDF file size for simpler uploads, easier
+              sharing, and a lightweight experience that feels reliable on everyday Android devices.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -163,9 +162,9 @@ export default function PdfCompressorPage() {
               Privacy details are available on a dedicated page
             </h2>
             <p className="mt-4 text-base leading-8 text-foreground/72">
-              The app includes a dedicated privacy policy page covering file handling, analytics,
-              advertising behavior, and user controls so store reviewers and users can quickly find
-              the information they need.
+              The app includes a dedicated privacy policy page covering local file handling,
+              advertising behavior, and user-facing permissions so store reviewers and users can
+              quickly find the information they need.
             </p>
             <Link
               href="/apps/pdf-compressor/privacy-policy"

@@ -10,9 +10,9 @@ import {
 
 export const apps = [
   {
-    name: "PDF Compressor",
+    name: "Compress PDF to 100KB - Nevlo",
     description:
-      "Shrink PDF file sizes with quality controls, faster sharing, and a privacy-first workflow built for everyday documents.",
+      "Compress PDF files toward a smaller target size for easier sharing with a privacy-focused workflow built for everyday documents.",
     icon: FileArchive,
     accent: "from-[#0C447C] to-[#5EA5E3]",
     href: "/apps/pdf-compressor",

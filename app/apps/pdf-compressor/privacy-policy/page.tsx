@@ -4,55 +4,51 @@ import Link from "next/link";
 import { BrandLockup } from "@/components/brand-lockup";
 
 export const metadata: Metadata = {
-  title: "PDF Compressor Privacy Policy | Nevlo",
+  title: "Privacy Policy for Compress PDF to 100KB - Nevlo",
   description:
-    "Privacy Policy for the PDF Compressor app by Nevlo, including file handling, analytics, ads, and user controls.",
+    "Privacy Policy for Compress PDF to 100KB - Nevlo, including local file handling, permissions, and advertising details.",
 };
 
 const sections = [
   {
-    title: "Overview",
-    body: "This Privacy Policy explains how the PDF Compressor app by Nevlo handles information when you use the app. The app is designed to help users compress PDF documents for easier storage and sharing while keeping data handling as limited and transparent as possible.",
+    title: "1. Information We Collect",
+    body: "We do NOT collect any personally identifiable information from users. This includes name, email address, phone number, and location data.",
   },
   {
-    title: "PDF Files and Document Handling",
-    body: "When you select a PDF for compression, the app uses that file only to perform the requested compression workflow. Nevlo does not claim ownership of your documents. Users should avoid processing sensitive files on shared or unsecured devices and should review app behavior and permissions before use.",
+    title: "2. File Access and Storage",
+    body: "The app requires access to your device storage to allow you to select and compress PDF files. All file processing is done locally on your device. We do NOT upload, store, or share your files on any server.",
   },
   {
-    title: "Information We May Collect",
-    body: "The app may collect limited technical information such as device model, operating system version, app version, crash logs, diagnostic events, and basic usage signals. This information is used to maintain app stability, improve performance, and understand feature reliability.",
+    title: "3. Permissions Used",
+    body: "Our app may request Storage (Read/Write) permission to access and save PDF files on your device, and Internet permission to display advertisements.",
   },
   {
-    title: "Advertising and Analytics",
-    body: "If the app includes advertising or third-party analytics services, those partners may collect device identifiers, approximate location derived from IP address, or engagement-related signals in accordance with their own privacy policies. These services may be used to measure app performance, prevent fraud, and show ads.",
+    title: "4. Advertising",
+    body: "We use third-party advertising services such as Google AdMob. AdMob may collect limited data such as device information, Advertising ID, and usage data. This data is used to provide relevant ads. For more information, please review Google's privacy policy: https://policies.google.com/privacy",
   },
   {
-    title: "How We Use Information",
-    body: "Information is used to operate the app, complete compression requests, diagnose crashes, improve speed and quality, understand aggregate usage patterns, and support product decisions. We do not sell personal information.",
+    title: "5. Data Sharing",
+    body: "We do NOT share any personal data with third parties. However, third-party services like AdMob may collect and process data as per their own privacy policies.",
   },
   {
-    title: "Data Sharing",
-    body: "Nevlo may share limited data with service providers that support analytics, crash reporting, app distribution, customer support, or advertising operations. Data may also be disclosed when required by law, to enforce legal rights, or to protect users and platform integrity.",
+    title: "6. Children's Privacy",
+    body: "This app is NOT specifically directed toward children under the age of 13. We do not knowingly collect personal information from children.",
   },
   {
-    title: "Permissions and User Controls",
-    body: "The app may request file access or storage-related permissions so users can choose PDFs and save compressed results. You can manage permissions through your Android device settings. If advertising is present, you may also have options to limit ad personalization through device-level controls.",
+    title: "7. Data Security",
+    body: "We do not store any user data on our servers. All processing happens locally on your device, helping ensure maximum privacy and security.",
   },
   {
-    title: "Data Retention and Security",
-    body: "We retain information only as long as reasonably necessary for operational, legal, and security purposes. We use reasonable safeguards to protect information, but no software or storage system can guarantee absolute security.",
+    title: "8. Your Consent",
+    body: "By using our app, you agree to this Privacy Policy.",
   },
   {
-    title: "Children's Privacy",
-    body: "PDF Compressor is not intended to knowingly collect personal information from children. If you believe a child has provided personal data through the app, contact us and we will review the issue.",
+    title: "9. Changes to This Policy",
+    body: "We may update this Privacy Policy from time to time. Any changes will be reflected on this page.",
   },
   {
-    title: "Policy Updates",
-    body: "This Privacy Policy may be updated to reflect changes in the app, legal requirements, or service providers. Any updates will be posted on this page with a revised effective date.",
-  },
-  {
-    title: "Contact",
-    body: "For privacy questions related to PDF Compressor, contact support.nevlo@gmail.com.",
+    title: "10. Contact Us",
+    body: "If you have any questions or concerns about this Privacy Policy, please contact us at support.nevlo@gmail.com or visit https://nevlo.netlify.app/",
   },
 ];
 
@@ -69,12 +65,12 @@ export default function PdfCompressorPrivacyPolicyPage() {
             className="nav-panel inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-primary-deep"
           >
             <ChevronLeft className="h-4 w-4" />
-            Back to PDF Compressor
+            Back to App
           </Link>
 
           <div className="inline-flex items-center gap-2 rounded-full border border-white/60 bg-white/62 px-4 py-2 text-sm font-medium text-primary-deep shadow-[0_12px_24px_rgba(12,68,124,0.08)] backdrop-blur">
             <FileCheck2 className="h-4 w-4" />
-            Effective Date: March 31, 2026
+            Effective Date: April 2, 2026
           </div>
         </div>
 
@@ -93,12 +89,12 @@ export default function PdfCompressorPrivacyPolicyPage() {
             </div>
 
             <h1 className="mt-5 font-display text-4xl font-semibold leading-tight text-primary-deep md:text-6xl">
-              PDF Compressor Privacy Policy
+              Privacy Policy for Compress PDF to 100KB - Nevlo
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-foreground/74 md:text-lg">
-              This page provides privacy details specific to the PDF Compressor app, including file
-              handling, diagnostic data, third-party services, and the controls available to users.
+              This page explains how Compress PDF to 100KB - Nevlo handles file access,
+              permissions, advertising, and privacy for app users.
             </p>
           </div>
         </div>
